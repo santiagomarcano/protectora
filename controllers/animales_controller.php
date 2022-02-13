@@ -3,17 +3,28 @@ function ver()
 {
     // echo $_GET['id'];
     if (!isset($_GET['id']))
-        die("No has especificado un identificador de libro.");
+        die("No has especificado un identificador.");
     $id = $_GET['id'];
     //Incluimos el modelo correspondiente
     require 'models/animales_model.php';
     //Le pide al modelo el libro con id = $id
     $animal = obtenerAnimal($id);
     if ($animal === null)
-        die("Identificador de libro incorrecto");
+        die("Identificador incorrecto");
 
     //Pasamos a la vista toda la información que se desea representar
-    include('views/animal_view.php');
+    include('views/animales/ver.php');
+}
+
+function listar()
+{
+    // echo $_GET['id'];
+    //Incluimos el modelo correspondiente
+    require 'models/animales_model.php';
+    //Le pide al modelo el libro con id = $id
+    $animales = obtenerAnimales();
+    //Pasamos a la vista toda la información que se desea representar
+    include('views/animales/listar.php');
 }
 
 function crear()
@@ -32,7 +43,7 @@ function crear()
         echo 'Creado!!';
     }
     if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-        include('views/animal_create_view.php');
+        include('views/animales/crear.php');
     }
 }
 

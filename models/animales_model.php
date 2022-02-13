@@ -10,6 +10,14 @@ function obtenerAnimal($id)
     return $sentencia->fetchObject();
 }
 
+function obtenerAnimales()
+{
+    $db = conexion();
+    $query = 'SELECT * FROM animales';
+    $sentencia = $db->query($query);
+    return $sentencia->fetchAll();
+}
+
 function crearAnimal($nombre, $edad, $especie, $direccion)
 {
     $db = conexion();
