@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Feb 13, 2022 at 12:10 PM
+-- Generation Time: Feb 23, 2022 at 09:10 PM
 -- Server version: 5.7.32
 -- PHP Version: 7.4.12
 
@@ -26,18 +26,16 @@ CREATE TABLE `animales` (
   `edad` int(50) NOT NULL,
   `especie` varchar(255) NOT NULL,
   `fecha` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `direccion` varchar(255) NOT NULL
+  `direccion` varchar(255) NOT NULL,
+  `imagen` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `animales`
 --
 
-INSERT INTO `animales` (`id`, `nombre`, `edad`, `especie`, `fecha`, `direccion`) VALUES
-(1, 'Garfield', 5, 'Perro', '2022-02-13 11:55:21', 'N/A'),
-(2, 'Tommy', 5, 'Perro', '2022-02-13 11:55:21', 'N/A'),
-(3, 'Prueba', 10, 'n/a', '2022-02-13 12:08:31', 'n/a');
-
+INSERT INTO `animales` (`id`, `nombre`, `edad`, `especie`, `fecha`, `direccion`, `imagen`) VALUES
+(3, 'Prueba', 10, 'n/a', '2022-02-13 12:08:31', 'n/a', 'perrito1.jpeg');
 
 --
 -- Indexes for dumped tables
@@ -57,4 +55,4 @@ ALTER TABLE `animales`
 -- AUTO_INCREMENT for table `animales`
 --
 ALTER TABLE `animales`
-  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
