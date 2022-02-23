@@ -18,10 +18,18 @@ function obtenerAnimales()
     return $sentencia->fetchAll();
 }
 
-function crearAnimal($nombre, $edad, $especie, $direccion)
+function crearAnimal($nombre, $edad, $especie, $direccion, $imagen)
 {
     $db = conexion();
-    $query = 'INSERT INTO animales (nombre, edad, especie, direccion) VALUES (?, ?, ? , ?)';
+    $query = 'INSERT INTO animales (nombre, edad, especie, direccion, imagen) VALUES (?, ?, ? , ?, ?)';
     $sentencia = $db->prepare($query);
-    return $sentencia->execute([$nombre, $edad, $especie, $direccion]);
+    return $sentencia->execute([$nombre, $edad, $especie, $direccion, $imagen]);
+}
+
+function eliminarAnimal($id)
+{
+    $db = conexion();
+    $query = 'DELETE FROM animales WHERE id = ?';
+    $sentencia = $db->prepare($query);
+    return $sentencia->execute([$id]);
 }

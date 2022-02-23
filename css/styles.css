@@ -11456,3 +11456,33 @@ header.masthead h1, header.masthead .h1 {
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
 }
+.input-file {
+  cursor: pointer;
+  position: relative;
+}
+.input-file input {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.bloque-mascota {
+  position: relative;
+}
+
+.bloque-mascota .botones {
+  position: absolute;
+  z-index: 2;
+  right: 15px;
+  top: 10px;
+}
+
+.bloque-mascota form {
+  display: inline;
+}

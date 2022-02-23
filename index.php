@@ -44,7 +44,7 @@
                 </div>
                 <div class="col-lg-8 align-self-baseline">
                     <!-- <p class="text-white-75 mb-5">Bienvenido al listado de animales rescatados</p> -->
-                    <a class="btn btn-primary btn-xl" href="#about">Ver animales!</a>
+                    <a class="btn btn-primary btn-xl" href="animales.php">Ver animales!</a>
                 </div>
             </div>
         </div>
@@ -57,7 +57,7 @@
                     <h2 class="text-white mt-0">Somos una protectora buscando hogares</h2>
                     <hr class="divider divider-light" />
                     <p class="text-white-75 mb-4">Listamos nuevos animales en este portal web para conseguirles un nuevo hogar</p>
-                    <a class="btn btn-light btn-xl" href="#services">Ver listado!</a>
+                    <a class="btn btn-light btn-xl" href="animales.php">Ver listado!</a>
                 </div>
             </div>
         </div>

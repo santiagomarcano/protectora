@@ -38,6 +38,7 @@ INSERT INTO `animales` (`id`, `nombre`, `edad`, `especie`, `fecha`, `direccion`)
 (2, 'Tommy', 5, 'Perro', '2022-02-13 11:55:21', 'N/A'),
 (3, 'Prueba', 10, 'n/a', '2022-02-13 12:08:31', 'n/a');
 
+
 --
 -- Indexes for dumped tables
 --
